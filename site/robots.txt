@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nahofit.life/sitemap.xml

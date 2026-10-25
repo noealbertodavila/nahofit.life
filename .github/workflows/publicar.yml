@@ -1,4 +1,4 @@
-# Arma la página y la publica en GitHub Pages (nahofit.life).
+# Publica la carpeta site/ tal cual (HTML, CSS y JS, sin compilar) en GitHub Pages (nahofit.life).
 name: Publicar
 on:
   push:
@@ -22,14 +22,9 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: npm install --no-audit --no-fund
-      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: site
       - id: deploy
         uses: actions/deploy-pages@v4
