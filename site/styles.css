@@ -273,3 +273,51 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--rosa-boton)
   .logo { font-size: 21px; }
   .idioma button { padding: 7px 8px; min-width: 32px; }
 }
+
+/* ── Instagram bien visible ─────────────────────────────────────────── */
+.ig-color { background: linear-gradient(45deg, #F58529 0%, #DD2A7B 45%, #8134AF 75%, #515BD4 100%); color: #fff; }
+.ig-barra { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; color: #fff; background: linear-gradient(45deg, #F58529 0%, #DD2A7B 45%, #8134AF 75%, #515BD4 100%); flex-shrink: 0; transition: transform .2s; }
+.ig-barra:hover { transform: scale(1.06); }
+.btn-ig { background: linear-gradient(45deg, #F58529 0%, #DD2A7B 45%, #8134AF 75%, #515BD4 100%); color: #fff; border: 0; }
+.btn-ig svg { margin-right: 2px; }
+.canal.ig { background: linear-gradient(45deg, #F58529 0%, #DD2A7B 45%, #8134AF 75%, #515BD4 100%); border: 0; color: #fff; }
+.canal.ig .canal-d { color: rgba(255, 255, 255, 0.9); }
+.canal.ig .canal-t { display: inline-flex; align-items: center; gap: 10px; }
+.ig-flotante { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: calc(max(16px, env(safe-area-inset-bottom)) + 66px); z-index: 900; display: flex; align-items: center; justify-content: center; width: 54px; height: 54px; border-radius: 50%; color: #fff; background: linear-gradient(45deg, #F58529 0%, #DD2A7B 45%, #8134AF 75%, #515BD4 100%); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22); transition: transform .2s; }
+.ig-flotante:hover { transform: scale(1.06); }
+
+/* ── Celular: página más corta ──────────────────────────────────────── */
+@media (max-width: 900px) {
+  .solo-grande { display: none !important; }
+  .seccion, .conexion, .caminos, .filosofia, .cierre { padding-top: 52px; padding-bottom: 52px; }
+  .hero { padding-top: calc(var(--barra) + 20px); padding-bottom: 44px; }
+  .hero-in { gap: 22px; }
+  .hero-foto { max-width: 210px; aspect-ratio: 4 / 4.6; }
+  .hero h1 { font-size: 42px; margin-bottom: 14px; }
+  .hero-sub { font-size: 17px; }
+  .hero-datos { margin-top: 18px; gap: 6px 14px; font-size: 13px; }
+  h2 { font-size: 28px; }
+  .conexion .destacado { margin-top: 10px; font-size: 21px; }
+  .tres { gap: 12px; margin-top: 22px; }
+  .tarjeta-camino { padding: 20px; }
+  .tarjeta-camino .num { display: none; }
+  .tarjeta-camino h3 { margin: 0 0 6px; font-size: 22px; }
+  .tarjeta-camino p { font-size: 15px; margin-bottom: 8px; }
+  .lista { gap: 8px; margin-bottom: 18px; }
+  .caja-suave, .caja-salvia, .preparacion { padding: 18px; margin-bottom: 18px; }
+  .pilares { margin: 24px 0; gap: 12px; }
+  .pilares li { padding: 18px 20px; display: grid; grid-template-columns: auto 1fr; gap: 0 14px; align-items: center; }
+  .pilar-num { margin: 0; grid-row: span 2; width: 38px; height: 38px; font-size: 17px; }
+  .pilares h3 { font-size: 24px; margin: 0 0 2px; }
+  .pasos { margin: 24px 0; gap: 16px; }
+  .pasos li { padding-top: 14px; }
+  .foto-arco { max-width: 230px; }
+  .filosofia blockquote { margin: 0; }
+  .filosofia .fil-firma { margin-top: 14px; }
+  summary { padding: 16px 0; font-size: 17px; }
+  .formulario { padding: 20px; }
+  .ig-barra { width: 38px; height: 38px; }
+}
+@media (max-width: 560px) {
+  .ig-flotante { width: 52px; height: 52px; bottom: calc(max(16px, env(safe-area-inset-bottom)) + 64px); }
+}
