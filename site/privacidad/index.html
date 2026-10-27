@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://fitorbe.com; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Política de privacidad · NAHOFIT</title>
   <meta name="robots" content="index, follow" />
@@ -126,20 +128,6 @@
     </div>
     <p style="margin-top:40px"><a href="/" data-volver>← Volver al inicio</a></p>
   </main>
-  <script>
-    (function () {
-      function poner(l) {
-        document.querySelectorAll("[data-doc]").forEach(function (d) { d.hidden = d.getAttribute("data-doc") !== l; });
-        document.querySelectorAll(".idioma button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === l)); });
-        document.documentElement.lang = l;
-        document.querySelector("[data-volver]").textContent = l === "en" ? "← Back to home" : "← Volver al inicio";
-      }
-      var l = "es"; try { l = localStorage.getItem("nahofit_idioma") || "es"; } catch (e) {}
-      poner(l);
-      document.querySelectorAll(".idioma button").forEach(function (b) {
-        b.addEventListener("click", function () { var v = b.getAttribute("data-lang"); try { localStorage.setItem("nahofit_idioma", v); } catch (e) {} poner(v); });
-      });
-    })();
-  </script>
+  <script src="/legal.js"></script>
 </body>
 </html>
