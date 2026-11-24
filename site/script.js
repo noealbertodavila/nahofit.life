@@ -111,6 +111,13 @@
     en: { wa: "Hi Nahomy, I saw your page and I'd like information to get started.", nombre: "Please enter your name.", contacto: "Leave your email or WhatsApp so I can reach you.", correo: "That email doesn't look right.", acepta: "Check the box so Nahomy can contact you.", enviando: "Sending…", fallo: "Couldn't send. Please try again or message me on WhatsApp.", menu_abrir: "Open menu", menu_cerrar: "Close menu" },
   };
 
+  // Enlaces viejos (nahofit.life/#coaching, etc.) llevan a la página nueva de cada servicio.
+  var VIEJOS = { "#coaching": "coaching/", "#metodo": "metodo/", "#fitness": "fitness/", "#nahomy": "sobre-nahomy/" };
+  if (/^\/(en\/)?$/.test(location.pathname) && VIEJOS[location.hash]) {
+    location.replace(location.pathname + VIEJOS[location.hash]);
+    return;
+  }
+
   document.documentElement.classList.add("js");
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
