@@ -60,6 +60,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/sobre-nahomy/"/>
     <changefreq>monthly</changefreq><priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://nahofit.life/herramientas/rueda/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/herramientas/rueda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/herramientas/rueda/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/en/herramientas/rueda/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/herramientas/rueda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/herramientas/rueda/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
   <url><loc>https://nahofit.life/privacidad/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://nahofit.life/terminos/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

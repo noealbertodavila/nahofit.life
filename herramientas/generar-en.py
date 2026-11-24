@@ -32,6 +32,8 @@ PAGINAS = {
                  "Personal training for women with Nahomy: strength, mobility and habits, out of love for yourself, not as punishment for your body. In person in Salt Lake City and online."),
     "sobre-nahomy/": ("About Nahomy, emotional coach and trainer · NAHOFIT",
                       "Meet Nahomy, NAHOFIT's emotional coach and personal trainer. She helps women build confidence and create habits, at their own pace."),
+    "herramientas/rueda/": ("Free wellbeing wheel · NAHOFIT",
+                            "A free tool to see how the areas of your life are doing: health, emotions, self-love, relationships, purpose, rest, joy and growth. Your answers are not saved."),
 }
 # Rutas que no tienen versión /en/ (son bilingües por sí mismas o son archivos)
 SIN_EN = ("/en/", "/assets/", "/styles.css", "/script.js", "/legal.js",

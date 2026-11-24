@@ -104,6 +104,13 @@
     pie_lema: "Bloom from within.", privacidad: "Privacy", terminos: "Terms",
     pie_aviso: "NAHOFIT offers emotional coaching and personal training. It is not therapy and does not replace medical or psychological care. Talk to your doctor before starting an exercise program. If you're in crisis, call or text 988.",
     wa_aria: "Message Nahomy on WhatsApp", wa_txt_corto: "WhatsApp",
+    rue_tag: "Free tool", rue_h1: "Wellbeing wheel",
+    rue_intro: "Move each slider from 1 to 10 based on how you feel today in that area of your life. There are no right or wrong answers: it's a snapshot of this moment.",
+    rue_privado: "Your answers are not saved or sent anywhere. When you close the page, they're gone.",
+    rue_legend: "How is each area today? (1 = very low, 10 = thriving)",
+    rue_reiniciar: "Start over", rue_imprimir: "Print or save as PDF",
+    rue_aviso: "This is an educational self-reflection tool. It is not a diagnosis and does not replace psychological or medical care. If you're in crisis, call or text 988; in an emergency, call 911.",
+    rue_btn: "Talk through my wheel with Nahomy", rue_btn2: "Discover the NAHOFIT Method",
   };
 
   var MSG = {

@@ -330,3 +330,25 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--rosa-boton)
 .pagina-primera { padding-top: calc(var(--barra) + clamp(40px, 6vw, 72px)); }
 .titulo-pagina { font-size: clamp(36px, 5vw, 56px); letter-spacing: -0.01em; }
 .menu a[aria-current="page"] { color: var(--grafito); font-weight: 700; }
+
+/* Rueda del bienestar */
+.rueda-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(24px, 4vw, 56px); align-items: start; margin: 32px 0; }
+.rueda-form fieldset { border: 0; padding: 0; margin: 0 0 16px; }
+.rueda-form legend { font-weight: 600; margin-bottom: 14px; }
+.rueda-fila { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--marfil-2); }
+.rueda-fila label { font-weight: 600; font-size: 16px; }
+.rueda-fila output { font-size: 14px; color: var(--grafito-2); }
+.rueda-fila input[type="range"] { grid-column: 1 / -1; width: 100%; min-height: 44px; accent-color: var(--bosque); cursor: pointer; }
+.rueda-vista svg { width: 100%; height: auto; display: block; font-family: var(--sans); }
+.rueda-resultado { margin-top: 12px; }
+.rueda-titulo-res { font-size: 22px; margin-bottom: 12px; }
+.rueda-tarjeta { background: var(--blanco); border-radius: var(--radio); padding: 18px 20px; margin-bottom: 12px; box-shadow: var(--sombra); }
+.rueda-tarjeta p { margin: 0 0 6px; color: var(--grafito-2); }
+.rueda-tarjeta .rueda-area { font-weight: 700; color: var(--bosque); }
+.rueda-aviso { margin-top: 8px; }
+@media (max-width: 900px) { .rueda-grid { grid-template-columns: 1fr; } }
+@media print {
+  .barra, .pie, .wa-flotante, .ig-flotante, .cierre, .botones, .rueda-form .botones { display: none !important; }
+  .pagina-primera { padding-top: 0; }
+  .rueda-tarjeta { box-shadow: none; border: 1px solid #ccc; }
+}
