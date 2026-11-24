@@ -26,7 +26,8 @@
     hero_h1: "Bloom <em>from within.</em>",
     hero_sub: "Your transformation begins when you decide to come back to yourself. Build your self-esteem, connect with your emotions and create habits that help you feel better about yourself.",
     hero_firma: "I'm Nahomy, emotional coach and personal trainer. I support you with respect and self-love, at your own pace.",
-    hero_btn1: "I want to start my transformation", hero_btn2: "Meet Nahomy",
+    hero_lema: "Reconnect with yourself. Strengthen your body. Live with purpose.",
+    hero_btn1: "Find your starting point", hero_btn2: "Meet Nahomy",
     hero_d1: "In person in Salt Lake City", hero_d2: "Online, wherever you are", hero_d3: "In Spanish and English",
     con_h2: "You've given so much time to others… when was the last time you thought about yourself?",
     con_p1: "Sometimes we keep going, meeting responsibilities, taking care of everyone and leaving our own needs for later. Maybe you feel you've lost some confidence, need to find your motivation again, or simply want to feel connected with yourself again.",
@@ -122,10 +123,11 @@
   $$("[data-i18n-aria]").forEach(function (el) { ES[el.getAttribute("data-i18n-aria")] = el.getAttribute("aria-label"); });
   var metaES = { title: document.title, desc: $('meta[name="description"]').content };
   var metaEN = { title: "NAHOFIT · Emotional coaching and wellbeing for women with Nahomy", desc: "Emotional coaching and mindful fitness with Nahomy. Build your self-esteem, connect with your emotions and care for your body. In person in Salt Lake City and online, in Spanish and English." };
-  var lang = "es";
+  // Cada idioma tiene su propia página: / (español) y /en/ (inglés), para que Google vea las dos.
+  var pagina = document.documentElement.lang === "en" ? "en" : "es";
+  var lang = pagina;
 
   function guardar(l) { try { localStorage.setItem("nahofit_idioma", l); } catch (e) { /* sin almacenamiento */ } }
-  function leer() { try { return localStorage.getItem("nahofit_idioma"); } catch (e) { return null; } }
 
   function aplicarIdioma(l) {
     lang = l === "en" ? "en" : "es";
@@ -145,7 +147,10 @@
     actualizarBotonMenu();
   }
   $$(".idioma button").forEach(function (b) {
-    b.addEventListener("click", function () { var l = b.getAttribute("data-lang"); guardar(l); aplicarIdioma(l); });
+    b.addEventListener("click", function () {
+      var l = b.getAttribute("data-lang"); guardar(l);
+      if (l !== pagina) { location.href = (l === "en" ? "/en/" : "/") + location.hash; }
+    });
   });
 
   /* ── Credenciales y testimonios ───────────────────────────────────── */
@@ -242,7 +247,5 @@
 
   /* ── Inicio ───────────────────────────────────────────────────────── */
   var anio = $("#anio"); if (anio) anio.textContent = String(new Date().getFullYear());
-  var guardado = leer();
-  var inicial = guardado || "es";
-  aplicarIdioma(inicial);
+  aplicarIdioma(pagina);
 })();

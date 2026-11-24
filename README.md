@@ -6,8 +6,10 @@ Se publica sola en GitHub Pages en cada cambio a `main` (`.github/workflows/publ
 ```
 site/
   index.html          una sola página con todas las secciones (español en el HTML)
-  styles.css          paleta marfil, rosa, salvia, arena y grafito · Playfair Display + Inter
+  styles.css          paleta verde bosque, salvia, arena, marfil y bronce · Playfair Display + Manrope
   script.js           inglés, menú, formulario, credenciales y testimonios
+  en/index.html       versión en inglés (se genera, no se edita a mano)
+  cancelacion/        política de cancelación (BORRADOR, sin enlazar ni indexar hasta que Nahomy la apruebe)
   privacidad/, terminos/, 404.html, robots.txt, sitemap.xml, CNAME
   assets/             fotos, favicon e imagen para compartir (opengraph.jpg)
 ```
@@ -22,3 +24,12 @@ site/
   Nahomy los ve en su panel de Fitorbe → Solicitudes. La modalidad (presencial / en línea) va en el mensaje.
 - "Entrar a mi cuenta" lleva a `https://fitorbe.com/login`.
 - Sin precios: se explican en la primera conversación.
+
+## Versión en inglés
+Los textos en inglés están en `site/script.js` (objeto `EN`). Después de cambiar `index.html` o esos textos, corre:
+
+```
+python3 herramientas/generar-en.py
+```
+
+Eso rehace `site/en/index.html`. Los botones ES/EN llevan de `/` a `/en/` y al revés.
