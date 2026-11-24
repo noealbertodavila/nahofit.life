@@ -5,10 +5,11 @@ Se publica sola en GitHub Pages en cada cambio a `main` (`.github/workflows/publ
 
 ```
 site/
-  index.html          una sola página con todas las secciones (español en el HTML)
+  index.html          inicio (portada, caminos, pasos, preguntas, contacto)
+  coaching/, metodo/, fitness/, sobre-nahomy/   una página por servicio
   styles.css          paleta verde bosque, salvia, arena, marfil y bronce · Playfair Display + Manrope
   script.js           inglés, menú, formulario, credenciales y testimonios
-  en/index.html       versión en inglés (se genera, no se edita a mano)
+  en/                 versión en inglés de todas las páginas (se genera, no se edita a mano)
   cancelacion/        política de cancelación (BORRADOR, sin enlazar ni indexar hasta que Nahomy la apruebe)
   privacidad/, terminos/, 404.html, robots.txt, sitemap.xml, CNAME
   assets/             fotos, favicon e imagen para compartir (opengraph.jpg)
@@ -32,4 +33,5 @@ Los textos en inglés están en `site/script.js` (objeto `EN`). Después de camb
 python3 herramientas/generar-en.py
 ```
 
-Eso rehace `site/en/index.html`. Los botones ES/EN llevan de `/` a `/en/` y al revés.
+Eso rehace todo `site/en/`. Los botones ES/EN llevan a la misma página en el otro idioma.
+El menú y el pie se repiten en cada página: si cambian, hay que cambiarlos en las cinco páginas en español.

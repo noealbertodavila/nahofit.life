@@ -149,7 +149,10 @@
   $$(".idioma button").forEach(function (b) {
     b.addEventListener("click", function () {
       var l = b.getAttribute("data-lang"); guardar(l);
-      if (l !== pagina) { location.href = (l === "en" ? "/en/" : "/") + location.hash; }
+      if (l !== pagina) {
+        var ruta = location.pathname.replace(/^\/en(\/|$)/, "/");
+        location.href = (l === "en" ? "/en" + ruta : ruta) + location.hash;
+      }
     });
   });
 
@@ -205,7 +208,7 @@
 
   /* ── Formulario → Fitorbe ─────────────────────────────────────────── */
   var form = $("#form"), err = $("#f-error"), boton = $("#f-boton");
-  form.addEventListener("submit", function (e) {
+  if (form) form.addEventListener("submit", function (e) {
     e.preventDefault();
     var m = MSG[lang];
     var nombre = $("#f-nombre").value.trim();

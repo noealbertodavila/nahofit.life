@@ -12,6 +12,54 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/"/>
     <changefreq>monthly</changefreq><priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://nahofit.life/coaching/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/coaching/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/coaching/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/en/coaching/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/coaching/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/coaching/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/metodo/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/metodo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/metodo/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/en/metodo/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/metodo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/metodo/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/fitness/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/fitness/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/fitness/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/en/fitness/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/fitness/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/fitness/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/sobre-nahomy/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/sobre-nahomy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/sobre-nahomy/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nahofit.life/en/sobre-nahomy/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahofit.life/sobre-nahomy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahofit.life/en/sobre-nahomy/"/>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
   <url><loc>https://nahofit.life/privacidad/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://nahofit.life/terminos/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

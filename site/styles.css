@@ -324,3 +324,8 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--rosa-boton)
 @media (max-width: 560px) {
   .ig-flotante { width: 52px; height: 52px; bottom: calc(max(16px, env(safe-area-inset-bottom)) + 64px); }
 }
+
+/* Páginas propias (coaching, método, fitness, sobre Nahomy) */
+.pagina-primera { padding-top: calc(var(--barra) + clamp(40px, 6vw, 72px)); }
+.titulo-pagina { font-size: clamp(36px, 5vw, 56px); letter-spacing: -0.01em; }
+.menu a[aria-current="page"] { color: var(--grafito); font-weight: 700; }
